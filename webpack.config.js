@@ -5,7 +5,7 @@ module.exports = {
   mode: "development",
   entry: "./client/index.js",
   module: {
-    roles: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
