@@ -4,7 +4,12 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
+  devtool: "source-map",
   entry: "./client/index.js",
+  output: {
+    libraryTarget: "var",
+    library: "Client",
+  },
   module: {
     rules: [
       {
